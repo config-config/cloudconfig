@@ -3,7 +3,7 @@ spring:
     active: dev
 ---
 #spring的配置
-sever:
+server:
   port: 9555
 spring:
   profiles: dev
@@ -18,7 +18,7 @@ eureka:
       defaultZone: http://localhost:7001/eureka/
 
 ---
-sever:
+server:
   port: 9556
 #spring的配置
 spring:

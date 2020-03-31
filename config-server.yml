@@ -1,0 +1,34 @@
+spring:
+  profiles:
+    active: dev
+---
+#spring的配置
+sever:
+  port: 9555
+spring:
+  profiles: dev
+  application:
+    name: springcloud-provide-dept
+
+
+#Eureka  服务器注册到哪里
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+
+---
+sever:
+  port: 9556
+#spring的配置
+spring:
+  profiles: test
+  application:
+    name: springcloud-provide-dept
+
+
+#Eureka  服务器注册到哪里
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
